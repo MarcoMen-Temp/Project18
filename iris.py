@@ -4,7 +4,7 @@
 
 import pandas as pd
 
-df = pd.read_csv('iris.csv', sep= ',')
+df = pd.read_csv('iris.csv', sep= ',' , names = ['SepalWidth(cm)', 'SepalLenght(cm)', 'PetalWidth(cm)', 'PetalLenght(cm)', 'Species']) #Stack OverFlow:'How to add header row to pandas DataFrame
 
 print(df.head())
 
