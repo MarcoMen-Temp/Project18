@@ -16,8 +16,12 @@ axes1.set_ylabel ('Values')
 axes1.set_title('Boxplot of Iris DataSet')
 boxplot.show()
 
-axes1 = boxplot.add
+
 axes2 = fig.add_subplot (2,2,2)
+scatter, ax =plt.subplots( )
+ax = sns.regplot(x= 'Species','Values', data = iris)
+ax.set_title('Scatterplot of Species and Values')
+ax.sett
 axes3 = fig.add_subplot (2,2,3)
 axes4 = fig.add_subplot (2,2,4)
  

@@ -5,23 +5,32 @@
 
 
 import pandas as pd
+from pandas import read_csv
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('iris.csv', header=None) # StackOverflow: 'How to add header row to pandas DataFrame and PythonHow.com-'Loading CSV data in Python with pandas'
-df.columns = ['Sep_L', 'Sep_W', 'Pet_L', 'Pet_W', 'Species']
-print(df.head()) # Prints the first 5 rows; For the last 5 rows: print(df.tail())
+df = pd.read_csv('iris.csv', header = None) # StackOverflow: 'How to add header row to pandas DataFrame and PythonHow.com-'Loading CSV data in Python with pandas'
+df.columns = ['Sepal Lenght','Sepal Width','Petal Lenght','Petal Width','Species']
+
+df.to_csv('iris_df.csv',index = False)
 
 
-print (df.columns) #Get column names on an Index Line(in Terminal)
-print(df.describe())
+df1 = pd.read_csv('iris_df.csv')
+
+print(df1.head())
+
+ # Prints the first 5 rows; For the last 5 rows: print(df.tail())
+
+
+print (df1.columns) #Get column names on an Index Line(in Terminal)
+print(df1.describe())
 #Assigning variables to header row(Index),to facilitate statistical calculations of the 4 numerical rows
-SepLength = df ['Sep_L' ]
-SepWidth = df ['Sep_W']
-PetLength = df ['Pet_L']
-PetWidth = df ['Pet_W']
-Species = df ['Species']
+SepLength = df1 ['Sepal Lenght' ]
+SepWidth = df1 ['Sepal Width']
+PetLength = df1 ['Petal Lenght']
+PetWidth = df1 ['Petal Width']
+Species = df1 ['Species']
 
 
 # Histograms are the most common means of looking at a single variable(univariate)
@@ -31,7 +40,7 @@ print(SepLength.describe()) # Statistical calculations(Summary of Statistics) fo
 print(SepWidth.describe())
 print(PetLength.describe())
 print(PetWidth.describe())
-df.to_csv(iris1,sep=' | ')
+
 
 #Histogram figures - www.kaggle.com -'Iris Dataset ML and Deep Learning from Scratch'
 df.hist()
