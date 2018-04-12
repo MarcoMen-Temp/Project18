@@ -31,6 +31,7 @@ SepWidth = df1 ['Sepal Width']
 PetLength = df1 ['Petal Lenght']
 PetWidth = df1 ['Petal Width']
 Species = df1 ['Species']
+df1.groupby(['Species']).size()
 
 
 # Histograms are the most common means of looking at a single variable(univariate)
