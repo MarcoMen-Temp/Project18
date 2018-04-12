@@ -31,6 +31,7 @@ print(SepLength.describe()) # Statistical calculations(Summary of Statistics) fo
 print(SepWidth.describe())
 print(PetLength.describe())
 print(PetWidth.describe())
+df.to_csv(iris1,sep=' | ')
 
 #Histogram figures - www.kaggle.com -'Iris Dataset ML and Deep Learning from Scratch'
 df.hist()
