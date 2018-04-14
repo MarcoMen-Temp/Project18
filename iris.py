@@ -11,6 +11,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 df = pd.read_csv('iris.csv', header = None) # StackOverflow: 'How to add header row to pandas DataFrame and PythonHow.com-'Loading CSV data in Python with pandas'
+
 df.columns = ['Sepal Lenght','Sepal Width','Petal Lenght','Petal Width','Species']
 
 
@@ -32,6 +33,7 @@ print(df.groupby('Species').size())
 df1 = df.iloc[0:50:1]
 df2 = df.iloc[50:100:1]
 df3 = df.iloc[100:150:1]
+
 
 print(df1)
 print (df2)
