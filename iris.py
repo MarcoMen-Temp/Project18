@@ -13,25 +13,29 @@ import matplotlib.pyplot as plt
 df = pd.read_csv('iris.csv', header = None) # StackOverflow: 'How to add header row to pandas DataFrame and PythonHow.com-'Loading CSV data in Python with pandas'
 df.columns = ['Sepal Lenght','Sepal Width','Petal Lenght','Petal Width','Species']
 
-df.to_csv('iris_df.csv',index = False)
 
-
-df1 = pd.read_csv('iris_df.csv')
-
-print(df1.head())
 
  # Prints the first 5 rows; For the last 5 rows: print(df.tail())
 
 
-print (df1.columns) #Get column names on an Index Line(in Terminal)
-print(df1.describe())
+print (df.columns) #Get column names on an Index Line(in Terminal)
+print(df.describe())
 #Assigning variables to header row(Index),to facilitate statistical calculations of the 4 numerical rows
-SepLength = df1 ['Sepal Lenght' ]
-SepWidth = df1 ['Sepal Width']
-PetLength = df1 ['Petal Lenght']
-PetWidth = df1 ['Petal Width']
-Species = df1 ['Species']
-df1.groupby(['Species']).size()
+SepLength = df ['Sepal Lenght' ]
+SepWidth = df ['Sepal Width']
+PetLength = df ['Petal Lenght']
+PetWidth = df ['Petal Width']
+Species = df ['Species']
+print(df.groupby('Species').size())
+
+#Create subsets based on different types of 'Iris'
+df1 = df.iloc[0:50:1]
+df2 = df.iloc[50:100:1]
+df3 = df.iloc[100:150:1]
+
+print(df1)
+print (df2)
+print(df3)
 
 
 # Histograms are the most common means of looking at a single variable(univariate)
