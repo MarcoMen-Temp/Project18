@@ -40,6 +40,8 @@ print (df2)
 print(df3)
 
 
+
+
 # Histograms are the most common means of looking at a single variable(univariate)
 print(Species.describe())
 print(SepLength.describe()) # Statistical calculations(Summary of Statistics) for  columns using  'describe'method() -Pg.73
@@ -53,9 +55,17 @@ print(PetWidth.describe())
 df.hist()
 his = plt.gcf()
 his.set_size_inches(12,6)
+plt.show ( )
+
+fig = sns.lmplot (x= 'Sepal Lenght' , y= 'Sepal Width', data= df)
+plt.show( )
+
+box, ax = plt.subplots( )
+ax = sns.boxplot (x= 'Species' , y='Sepal Width', data= df)
+ax.set_title('Boxplot of Iris Sepal Width')
+ax.set_xlabel('Species')
+ax.set_ylabel('Sepal Width')
 plt.show()
-
-
 
 
 
