@@ -14,7 +14,7 @@ df = pd.read_csv('iris.csv', header = None) # StackOverflow: 'How to add header 
 
 df.columns = ['Sepal Lenght','Sepal Width','Petal Lenght','Petal Width','Species']
 
-
+print(df.info())
 
  # Prints the first 5 rows; For the last 5 rows: print(df.tail())
 
@@ -60,12 +60,7 @@ plt.show ( )
 fig = sns.lmplot (x= 'Sepal Lenght' , y= 'Sepal Width', data= df)
 plt.show( )
 
-box, ax = plt.subplots( )
-ax = sns.boxplot (x= 'Species' , y='Sepal Width', data= df)
-ax.set_title('Boxplot of Iris Sepal Width')
-ax.set_xlabel('Species')
-ax.set_ylabel('Sepal Width')
-plt.show()
+
 
 
 
