@@ -59,7 +59,12 @@ Plenty of information available online and I provided a list of resources used b
   
   ## Plot.py
   
-  This file uses Matplotlib and Seaborn to plot pairplot graphs in a matrix
+  This file uses Matplotlib and Seaborn to plot pairplot graphs in a matrix. Histograms and scatter plots for the different species of iris separated by different colours. We can see that Iris versicolor and virginica are very closely related,because their distributed very closely(almost overlapping). Here the use of contrasting colour is most beneficial for anyone analysing data so closely related
+  
+  
+  ## Boxplot.py
+  
+  This file shows the boxplot for the diferent variables(measurements). And we can visualise the calculated minimum, maximum,mean values from iris.py of both Sepal and Petal width and lenght(4 boxplots for each)
   
   
   
