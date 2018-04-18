@@ -9,5 +9,5 @@ iris = sns.load_dataset('iris')
 
 print(iris)
 
-ax = sns.boxplot(data = iris, hue= 'species', orient= 'v', palette='Set2')  #https://seaborn.pydata.org- 'Seaborn.boxplot
+ax = sns.boxplot(data = iris, orient= 'v', palette='Set2')  #https://seaborn.pydata.org- 'Seaborn.boxplot
 plt.show()
