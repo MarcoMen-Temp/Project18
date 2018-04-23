@@ -104,9 +104,9 @@ This block of code was implemented while discovering and experimenting code with
   The 4 first columns are measurements in cms,and the 5th column('Species') describes the type of iris flower
   
  The data set is composed as folows: 
-    * First 50 entries - Iris Setosa
-    * From 51 -100 entries - Iris Versicolor
-    * From 101 - 150 entries - Iris Virginica
+    - First 50 entries - Iris Setosa
+    - From 51 -100 entries - Iris Versicolor
+    - From 101 - 150 entries - Iris Virginica
     
 Plenty of information available online and I provided a list of resources used by me whilst doing this project. I used the resources and references listed above to gather information,filter and use what I considered relevant. Also,to provide some benchmark for the results of the algorithms written by me in Python,with regards to outputs.
 
