@@ -93,7 +93,8 @@ Created subsets of the all iris dataset:
  - df1 = DataFrame for 'Iris-setosa'(using the iloc[]method,appended the index range (0,50,1)-(start,end not incl.,stepvalue)
  - df2 = DataFrame for 'Iris-versicolor'
  - df3 = DataFrame for 'Iris-virginica'
-  These block of code was implemented while discovering and experimenting code with Pandas. For each DataFrame ,make the basic stats calculations(.describe()method) in 'iris.py'
+ 
+This block of code was implemented while discovering and experimenting code with Pandas. For each DataFrame ,make the basic stats calculations(.describe()method) in 'iris.py'
     
     
 ### About the Iris Data Set
