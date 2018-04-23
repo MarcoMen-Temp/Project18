@@ -61,7 +61,7 @@ According to https://seaborn.pydata.org/ "Seaborn is a Python visualization libr
 
   ### Initial Plan
 
-My initial plan involved everything presented in this project with a SVM and KNN (by importing modules from sklearn package),as described in: "https://www.kaggle.com/kamrankausar/iris-dataset-ml-and-deep-learning-from-scratch" and "https://machinelearningmastery.com/machine-learning-in-python-step-by-step/"
+My initial plan involved everything  already presented in this project with an additional algorithms for claculating SVM and KNN (*by importing modules from sklearn package*),as described in: "https://www.kaggle.com/kamrankausar/iris-dataset-ml-and-deep-learning-from-scratch" and "https://machinelearningmastery.com/machine-learning-in-python-step-by-step/"
 
   ### Final Project
   
