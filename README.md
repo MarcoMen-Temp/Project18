@@ -8,18 +8,18 @@
   
   This project was written and compiled using python's library package named 'panda'( an abbreviation for 'panel data'). The resources and references used are provided below:
   
- > https://archive.ics.uci.edu - 'UCI Machine Learning Reposityory'
- > https://en.m.wikipedia.org - 'Iris flower data set'
- > https://statcan.gc.ca - 'Constructing box and whisker plots'
- > www.datacarpentry.org - 'Python for ecologists'
- > https://machinelearningmastery.com - 'Your First Machine Learning Project in Python Step-By-Step'
- > blog.bharatbhole.com - ' Creating boxplotswith Matplotlib'
- > https://pandas.pydata.org
- > https://matplotlib.org
- > www.kaggle.com - 'Iris Dataset ML and Deep Learning from Scratch'
- > https://medium.com - 'Basic Analysis of Iris Data set using Python'
- > https://neuraldesigner.com - 'Iris flowers classification'
- > 'Pandas For Everyone - Python Data Analysis' -Daniel Y. Chen(Addison -Wesley) -2018
+ >https://archive.ics.uci.edu - 'UCI Machine Learning Reposityory'
+ >https://en.m.wikipedia.org - 'Iris flower data set'
+ >https://statcan.gc.ca - 'Constructing box and whisker plots'
+ >www.datacarpentry.org - 'Python for ecologists'
+ >https://machinelearningmastery.com - 'Your First Machine Learning Project in Python Step-By-Step'
+ >blog.bharatbhole.com - ' Creating boxplotswith Matplotlib'
+ >https://pandas.pydata.org
+ >https://matplotlib.org
+ >www.kaggle.com - 'Iris Dataset ML and Deep Learning from Scratch'
+ >https://medium.com - 'Basic Analysis of Iris Data set using Python'
+ >https://neuraldesigner.com - 'Iris flowers classification'
+ >'Pandas For Everyone - Python Data Analysis' -Daniel Y. Chen(Addison -Wesley) -2018
 
 ## Before Start of the Project
 
