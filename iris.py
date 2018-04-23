@@ -1,12 +1,7 @@
 # Marco Men - Project2018
 # This file will read,retrieve and manipulate data from 'iris.csv'
 
-
-
-
 import pandas as pd
-from pandas import read_csv
-import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
