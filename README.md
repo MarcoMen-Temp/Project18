@@ -8,18 +8,18 @@
   
   This project was written and compiled using python's library package named 'panda'( an abbreviation for 'panel data'). The resources and references used are provided below:
   
- >>https://archive.ics.uci.edu - 'UCI Machine Learning Reposityory'
- >>https://en.m.wikipedia.org - 'Iris flower data set'
- >>https://statcan.gc.ca - 'Constructing box and whisker plots'
- >>www.datacarpentry.org - 'Python for ecologists'
- >>https://machinelearningmastery.com - 'Your First Machine Learning Project in Python Step-By-Step'
- >>blog.bharatbhole.com - ' Creating boxplotswith Matplotlib'
- >>https://pandas.pydata.org
- >https://matplotlib.org
- >>www.kaggle.com - 'Iris Dataset ML and Deep Learning from Scratch'
- >>https://medium.com - 'Basic Analysis of Iris Data set using Python'
- >>https://neuraldesigner.com - 'Iris flowers classification'
- >>'Pandas For Everyone - Python Data Analysis' -Daniel Y. Chen(Addison -Wesley) -2018
+ * https://archive.ics.uci.edu - 'UCI Machine Learning Reposityory'
+ * https://en.m.wikipedia.org - 'Iris flower data set'
+ * https://statcan.gc.ca - 'Constructing box and whisker plots'
+ * www.datacarpentry.org - 'Python for ecologists'
+ * https://machinelearningmastery.com - 'Your First Machine Learning Project in Python Step-By-Step'
+ * blog.bharatbhole.com - ' Creating boxplotswith Matplotlib'
+ * https://pandas.pydata.org
+ * https://matplotlib.org
+ * www.kaggle.com - 'Iris Dataset ML and Deep Learning from Scratch'
+ * https://medium.com - 'Basic Analysis of Iris Data set using Python'
+ * https://neuraldesigner.com - 'Iris flowers classification'
+ * 'Pandas For Everyone - Python Data Analysis' -Daniel Y. Chen(Addison -Wesley) -2018
 
 ## Before Start of the Project
 
@@ -61,13 +61,13 @@ My initial plan involved everything presented in this project with a SVM and KNN
 I decided  against including the SVM and KNN, as all of the objectives were reached by calculating the summary of desciptive statistics and the graphs plotted were sufficient to demonstrate to the  users the results of the analysed data.  
 
 Overall, the main objectives and learning outcomes were achived by me,and they include:
-  > Basic understanding of technical knowledge,skills and tools available for data analysis
-  > Understanding of requirements for retrieving and storing data files(i.e.CSV files) into a Python environment in order to best manipulate and assemble data required.  **(Please see note below)**
-  > Understanding of basic panda's commands to save CSV files into dataframes(df),append column rows(header) without affecting the indexation of rows(df.column),list the five first rows of dataframe(with df.head),list the five last rows(df.tail),obtain information on the type of Panda objects(Series or Dataframe used(df.info()) and size of file
-  > Understanding how to list a summary of descriptive statistical calculations(df.describe) of the dataframe saved,or its individual calculations(i.e df.mean(),or df.std(),df.max(),df.min(),df.median(),etc.
-  > Understanding on how to select specific rows, create subsets from a dataframe(using iloc-index number or loc-index label).
-  > Learn commands to load a Dataframe file for plotting using Matplotlib and Seaborn
-  > Basic understanding of plotting with Panda objects.
+  - Basic understanding of technical knowledge,skills and tools available for data analysis
+  - Understanding of requirements for retrieving and storing data files(i.e.CSV files) into a Python environment in order to best manipulate and assemble data required.  **(Please see note below)**
+  - Understanding of basic panda's commands to save CSV files into dataframes(df),append column rows(header) without affecting the indexation of rows(df.column),list the five first rows of dataframe(with df.head),list the five last rows(df.tail),obtain information on the type of Panda objects(Series or Dataframe used(df.info()) and size of file
+  - Understanding how to list a summary of descriptive statistical calculations(df.describe) of the dataframe saved,or its individual calculations(i.e df.mean(),or df.std(),df.max(),df.min(),df.median(),etc.
+  - Understanding on how to select specific rows, create subsets from a dataframe(using iloc-index number or loc-index label).
+  - Learn commands to load a Dataframe file for plotting using Matplotlib and Seaborn
+  - Basic understanding of plotting with Panda objects.
   
   ** Note- The iris dataset provided me no issues regarding missing data,NaNs or index issues. Although, I prepared myself to tackle such events,were they to arise - The process of 'tidying data' of Dataframe  and making it ready for analysis is also a learning outcome attained by me
   
@@ -82,10 +82,10 @@ A Iris.py was opened that will read,retrive and manipulate data from csv(through
 I used anaconda python with VS Code, pandas,matplotlib and seaborn for this project
 
 Created subsets of the all iris dataset:
-  df = DataFrame for the whole 'iris dataset'
-  df1 = DataFrame for 'Iris-setosa'(using the iloc[]method,appended the index range (0,50,1)-(start,end not incl.,stepvalue)
-  df2 = DataFrame for 'Iris-versicolor'
-  df3 = DataFrame for 'Iris-virginica'
+ - df = DataFrame for the whole 'iris dataset'
+ - df1 = DataFrame for 'Iris-setosa'(using the iloc[]method,appended the index range (0,50,1)-(start,end not incl.,stepvalue)
+ - df2 = DataFrame for 'Iris-versicolor'
+ - df3 = DataFrame for 'Iris-virginica'
   These block of code was implemented while discovering and experimenting code with Pandas. For each DataFrame ,make the basic stats calculations(.describe()method) in 'iris.py'
     
     
@@ -96,9 +96,9 @@ Created subsets of the all iris dataset:
   The 4 first columns are measurements in cms,and the 5th column('Species') describes the type of iris flower
   
  The data set is composed as folows: 
-    >First 50 entries - Iris Setosa
-    >From 51 -100 entries - Iris Versicolor
-    >From 101 - 150 entries - Iris Virginica
+    * First 50 entries - Iris Setosa
+    * From 51 -100 entries - Iris Versicolor
+    * From 101 - 150 entries - Iris Virginica
     
 Plenty of information available online and I provided a list of resources used by me whilst doing this project. I used the resources and references listed above to gather information,filter and use what I considered relevant. Also,to provide some benchmark for the results of the algorithms written by me in Python,with regards to outputs.
 
