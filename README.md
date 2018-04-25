@@ -84,7 +84,11 @@ Overall, the main objectives and learning outcomes were achived by me,and they i
   ** Note- The iris dataset provided me no issues regarding missing data,NaNs or index issues. Although, I prepared myself to tackle such events,were they to arise - The process of 'tidying data' of Dataframe  and making it ready for analysis is also a learning outcome attained by me
   
   
-  ## Documentation
+  --------------------------------------------------------------------------------------------------------------------------------------
+  
+  
+  
+ ## Documentation
   
   
   > Iris Dataset retrieved from: " https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data " and saved as a csv file on Microsoft VS Code.
@@ -146,7 +150,7 @@ Plenty of information available online and I provided a list of resources used b
   
   #### Boxplot.py
   
-  This file shows the boxplots for the different species of irises.
+  This file shows the boxplots. Each boxplot represents each numerical columns.
   Boxplots provide a clear visualisation of median(Q2),minimum(lower observation on whisker and maximum(highest observation) values,lower quartile(Q1),and upper quartile(Q3)  from iris.py of all 4 columns('Sepal Width', 'Sepal Lenght', 'Petal Width' and 'Petal Lenght')
   
   
