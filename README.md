@@ -148,5 +148,10 @@ Plenty of information available online and I provided a list of resources used b
   
   This file shows the boxplots for the different species of irises.
   Boxplots provide a clear visualisation of median(Q2),minimum(lower observation on whisker and maximum(highest observation) values,lower quartile(Q1),and upper quartile(Q3)  from iris.py of all 4 columns('Sepal Width', 'Sepal Lenght', 'Petal Width' and 'Petal Lenght')
+  
+  
+  #### LinReg.py
+  
+  This file shows 2 Linear Regression graphs(one based on 'Sepal' variables and the other based on 'Petal' ),to help identify better co relationship between the 3 species. By viewing the both graphs, I could conclude that 'iris-virginica' and 'iris-versicolor' are closely related by their measured results. 'Iris setosa' seems to be completely unrelated,as its results appear distant and distinguished from the other 2 species. 
 
 
