@@ -52,8 +52,7 @@ his = plt.gcf()
 his.set_size_inches(12,6)
 plt.show ( )
 
-fig = sns.lmplot (x= 'Sepal Lenght' , y= 'Sepal Width', data= df)
-plt.show( )
+
 
 
 

@@ -13,8 +13,7 @@ print(iris)
 fig = sns.pairplot (iris, hue='species')
 plt.show()
 
-ax = sns.boxplot(data = iris, orient= 'v', palette='Set2')  #https://seaborn.pydata.org- 'Seaborn.boxplot
-plt.show()
+
 
 
 
