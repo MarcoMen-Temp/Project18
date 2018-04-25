@@ -23,7 +23,8 @@
 
 ### Before Start of the Project
 
-Upon completion of literature review consisting of matplotlib documentation review, I have come to a conclusion that 'numpy' could be used as a stand-alone, in conjunction with 'pandas', or just 'pandas' as both packages are compatible and complimentary. There are multiple similar and/or overlapping commands between the two packages. I have thoroughly researched Pandas package and determined that it will be most suitable to complete the project using this package.
+Upon completion of literature review consisting of matplotlib documentation review, I have come to a conclusion that 'numpy' could be used as a stand-alone, in conjunction with 'pandas', or just 'pandas' as both packages are compatible and complimentary. There are multiple similar and/or overlapping commands between the two packages. I have thoroughly researched Pandas package and determined that it will be most suitable to complete the project using this package. To conduct this project with Numpy,a useful toolkit to have for running and testing strings of code,before adding it to the final algoritm is IPython,which stands for Interactive Python.
+I was unable to get IPython running on my machine, so Pandas provided an excellent alternative to my initial plan.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -61,11 +62,15 @@ According to https://seaborn.pydata.org/ "Seaborn is a Python visualization libr
 
   ### Initial Plan
 
-My initial plan involved everything  already presented in this project with an additional algorithms for claculating SVM and KNN (*by importing modules from sklearn package*),as described in: "https://www.kaggle.com/kamrankausar/iris-dataset-ml-and-deep-learning-from-scratch" and "https://machinelearningmastery.com/machine-learning-in-python-step-by-step/"
+My initial plan involved everything  already presented in this project with an additional algorithms for claculating SVM and KNN (*by importing modules from sklearn package*),as described in: "https://www.kaggle.com/kamrankausar/iris-dataset-ml-and-deep-learning-from-scratch" and "https://machinelearningmastery.com/machine-learning-in-python-step-by-step/". Additionally,have one file for the calculations and all the graphs plotted within that same file.
 
   ### Final Project
   
-I decided  against including the SVM and KNN, as all of the objectives were reached by calculating the summary of desciptive statistics and the graphs plotted were sufficient to demonstrate to the  users the results of the analysed data.  
+I decided  against including the SVM and KNN, as all of the objectives were reached by calculating the summary of desciptive statistics and the graphs plotted were sufficient to demonstrate to the  users the results of the analysed data. 
+As for the second point mentioned above, I concluded that too much time was being used on my machine to do everything in one file. So, I assumed it would be a similar event on other machines.
+
+I then decided to have one file for the calculation and histogram ( using Matplotlib ) without colour distinction ( default lightblue );
+another file for the plots( with a matrix ) with colour distinction ( using Seaborn ); and the boxerplots on a separate file
 
 Overall, the main objectives and learning outcomes were achived by me,and they include:
   - Basic understanding of technical knowledge,skills and tools available for data analysis
@@ -103,7 +108,7 @@ This block of code was implemented while discovering and experimenting code with
   Its data is comprised by 150 rows and 5 columns('Sepal Width', Sepal Lenght', Petal Width', 'Petal Lenght' and 'Species')
   The 4 first columns are measurements in cms,and the 5th column('Species') describes the type of iris flower
   
- The data set is composed as folows: 
+ The data set is composed as folows(and these are known as *attributes*): 
   - First 50 entries - Iris Setosa
   - From 51 -100 entries - Iris Versicolor
   - From 101 - 150 entries - Iris Virginica
@@ -129,6 +134,7 @@ Plenty of information available online and I provided a list of resources used b
   This file opened and stored iris.csv as a dataframe(or short df),using pandas library. From there I used built-in commands(df.describe()) to calculate a summary of basic statistics calculations(min.,max.,std. dev.,frequency,quartiles).
   
   As this was my first time using pandas for Python,I tried different commands(add columns for header,print the first 5 rows of dataframes,append by index row numbers values to different subsets of the dataframe,list information about the Dataframe.
+  After all the calculations are performed and presented, a matrix of histograms is plotted and shown with the default lightblue for all 4 variables
   
   #### Plot.py
   
