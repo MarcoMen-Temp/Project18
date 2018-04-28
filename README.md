@@ -65,7 +65,7 @@ My initial plan involved everything  already presented in this project with an a
 
   ### Final Project
   
-The reason for non-inclusion of  SVM and KNN was because on project review, I concluded that those algorithms are mainly used for Machine Learning,which was outside the scope of this project. The scope of this project was around "Data". That is retrieval, storage, manipulation, assembly and visualisation of "Data". I thought I would leave Machine Learning for a future assignment
+The reason for non-inclusion of  SVM and KNN was because on project review, I concluded that those algorithms are mainly used for Machine Learning,which was outside the scope of this project. The scope of this project was around "Data Strutures". That is retrieval, storage, manipulation, assembly and visualisation of "Data Structure"(DataFrame). I thought Machine Learning would be best suited for a future assignment.
  As all  objectives set by me initially were reached by calculating the summary of desciptive statistics and the graphs plotted were sufficient to demonstrate to the  users the results of the analysed data. 
 
 I then decided to have one file for the calculation and histogram ( using Matplotlib ) without colour distinction ( default lightblue );
