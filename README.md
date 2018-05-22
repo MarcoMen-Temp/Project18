@@ -23,7 +23,7 @@
 
 ### Before Start of the Project
 
-Upon completion of literature review consisting of matplotlib documentation review, I have come to a conclusion that 'numpy' could be used as a stand-alone, in conjunction with 'pandas', or just 'pandas' as both packages are compatible and complimentary. There are multiple similar and/or overlapping commands between the two packages. I have thoroughly researched Pandas package and determined that it will be most suitable to complete the project using this package.
+Upon completion of literature review consisting of matplotlib documentation review, I have come to a conclusion that 'numpy' could be used as a stand-alone, in conjunction with 'pandas', or just 'pandas' as both packages are compatible and complimentary. There are multiple similar and/or overlapping commands between the two packages. I have thoroughly researched Pandas package and determined that it will be most suitable to complete the project using this package. 
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -49,7 +49,7 @@ For simple plotting the pyplot module provides a MATLAB-like interface, particul
 
 ### Seaborn
 
-For this project 'Seaborn' was used to enhance graphic visualisation of graphs plotted by matplotlib. To make them  more user friendly, facilitating the immediate distinction between different variables based on 'Species' of irises, several different colours were applied. Seaborn also provides a legend to the the graphs to help the users in identification of different variables.
+For this project 'Seaborn' was used to enhance graphic visualisation of graphs plotted by matplotlib. To make them  more user friendly, facilitating the immediate distinction between different classes (of 'Species') of irises, several different colours were applied. Seaborn also provides a legend to the the graphs to help the users in identification of different variables.
 
 According to https://seaborn.pydata.org/ "Seaborn is a Python visualization library based on matplotlib. It provides a high-level interface for drawing attractive statistical graphics."
 
@@ -61,25 +61,33 @@ According to https://seaborn.pydata.org/ "Seaborn is a Python visualization libr
 
   ### Initial Plan
 
-My initial plan involved everything  already presented in this project with an additional algorithms for claculating SVM and KNN (*by importing modules from sklearn package*),as described in: "https://www.kaggle.com/kamrankausar/iris-dataset-ml-and-deep-learning-from-scratch" and "https://machinelearningmastery.com/machine-learning-in-python-step-by-step/"
+My initial plan involved everything  already presented in this project with an additional algorithms for claculating SVM and KNN (*by importing modules from sklearn package*),as described in: "https://www.kaggle.com/kamrankausar/iris-dataset-ml-and-deep-learning-from-scratch" and "https://machinelearningmastery.com/machine-learning-in-python-step-by-step/" , these are also mentioned in "Introduction to Machine Learning with Python"-by Andreas C. Mueller & Sarah Guido
 
   ### Final Project
   
-I decided  against including the SVM and KNN, as all of the objectives were reached by calculating the summary of desciptive statistics and the graphs plotted were sufficient to demonstrate to the  users the results of the analysed data.  
+The reason for non-inclusion of  SVM and KNN was because on project review, I concluded that those algorithms are mainly used for Machine Learning,which was outside the scope of this project. The scope of this project was around "Data Strutures". That is retrieval, storage, manipulation, assembly and visualisation of "Data Structure"(DataFrame). I thought Machine Learning would be best suited for a future assignment.
+ As all  objectives set by me initially were reached by calculating the summary of desciptive statistics and the graphs plotted were sufficient to demonstrate to the  users the results of the analysed data. 
 
-Overall, the main objectives and learning outcomes were achived by me,and they include:
-  - Basic understanding of technical knowledge,skills and tools available for data analysis
+I then decided to have one file for the calculation and histogram ( using Matplotlib ) without colour distinction ( default lightblue );
+another file for the plots( with a matrix ) with colour distinction ( using Seaborn ); and the boxerplots on a separate file
+
+Overall, the main objectives and learning outcomes were achived by me, and they include:
+  - Basic understanding of technical knowledge, skills and tools available for data analysis
   - Understanding of requirements for retrieving and storing data files(i.e.CSV files) into a Python environment in order to best manipulate and assemble data required.  **(Please see note below)**
-  - Understanding of basic panda's commands to save CSV files into dataframes(df),append column rows(header) without affecting the indexation of rows(df.column),list the five first rows of dataframe(with df.head),list the five last rows(df.tail),obtain information on the type of Panda objects(Series or Dataframe used(df.info()) and size of file
-  - Understanding how to list a summary of descriptive statistical calculations(df.describe) of the dataframe saved,or its individual calculations(i.e df.mean(),or df.std(),df.max(),df.min(),df.median(),etc.
+  - Understanding of basic panda's commands to save CSV files into dataframes(df), append column rows(header) without affecting the indexation of rows(df.column), list the five first rows of dataframe(with df.head), list the five last rows(df.tail), obtain information on the type of Panda objects(Series or Dataframe used(df.info()) and size of file
+  - Understanding how to list a summary of descriptive statistical calculations(df.describe) of the dataframe saved, or its individual calculations(i.e df.mean(), or df.std(), df.max(), df.min(), df.median(), etc.
   - Understanding on how to select specific rows, create subsets from a dataframe(using iloc-index number or loc-index label).
   - Learn commands to load a Dataframe file for plotting using Matplotlib and Seaborn
   - Basic understanding of plotting with Panda objects.
   
-  ** Note- The iris dataset provided me no issues regarding missing data,NaNs or index issues. Although, I prepared myself to tackle such events,were they to arise - The process of 'tidying data' of Dataframe  and making it ready for analysis is also a learning outcome attained by me
+  ** Note- The iris dataset provided me no issues regarding missing data,NaNs or index issues. Although, I prepared myself to tackle such events, were they to arise - The process of 'tidying data' of Dataframe  and making it ready for analysis is also a learning outcome attained by me
   
   
-  ## Documentation
+  --------------------------------------------------------------------------------------------------------------------------------------
+  
+  
+  
+ ## Documentation
   
   
   > Iris Dataset retrieved from: " https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data " and saved as a csv file on Microsoft VS Code.
@@ -90,34 +98,34 @@ I used anaconda python with VS Code, pandas,matplotlib and seaborn for this proj
 
 Created subsets of the all iris dataset:
  - df = DataFrame for the whole 'iris dataset'
- - df1 = DataFrame for 'Iris-setosa'(using the iloc[]method,appended the index range (0,50,1)-(start,end not incl.,stepvalue)
+ - df1 = DataFrame for 'Iris-setosa'(using the iloc[]method,appended the index range (0,50,1)-(start, end not incl., stepvalue)
  - df2 = DataFrame for 'Iris-versicolor'
  - df3 = DataFrame for 'Iris-virginica'
  
-This block of code was implemented while discovering and experimenting code with Pandas. For each DataFrame ,make the basic stats calculations(.describe()method) in 'iris.py'
+This block of code was implemented while discovering and experimenting code with Pandas. For each DataFrame, make the basic stats calculations(.describe()method) in 'iris.py'
     
     
 ### About the Iris Data Set
 
-  Iris dataset is a multivariate data set and since it was introduced by Ronald Fisher in 1936 in his paper('The use of multiple measurements in taxonomic problems has been used by other biologists,staticians and students(for statistical studies and projects)
+  Iris dataset is a multivariate data set and since it was introduced by Ronald Fisher in 1936 in his paper('The use of multiple measurements in taxonomic problems has been used by other biologists, staticians and students(for statistical studies and projects)
   Its data is comprised by 150 rows and 5 columns('Sepal Width', Sepal Lenght', Petal Width', 'Petal Lenght' and 'Species')
   The 4 first columns are measurements in cms,and the 5th column('Species') describes the type of iris flower
   
- The data set is composed as folows: 
+ The data set is composed as folows(and these are known as *classes*): 
   - First 50 entries - Iris Setosa
   - From 51 -100 entries - Iris Versicolor
   - From 101 - 150 entries - Iris Virginica
     
-Plenty of information available online and I provided a list of resources used by me whilst doing this project. I used the resources and references listed above to gather information,filter and use what I considered relevant. Also,to provide some benchmark for the results of the algorithms written by me in Python,with regards to outputs.
+Plenty of information available online and I provided a list of resources used by me whilst doing this project. I used the resources and references listed above to gather information, filter and use what I considered relevant. Also, to provide some benchmark for the results of the algorithms written by me in Python, with regards to outputs.
 
     
 
 ### Data Science
 
-  One of the cornerstones of Data Science is the subject of Machine Learning and this is the main context of this project. 
-  What was once done manually is possible to automate the most tedious and time consuming tasks. For example,plotting      histograms,scatterplots and boxplots for all 4 different measurements of the different subsets of species and compiling it all back together would require months to perform,using traditional statistical studies technique. With Machine Learning,one can achieve this in a matter of weeks and with a lot less effort.
-  There are however,tricks,skills and techiniques to know. For a Data Scientist,the data retrieved from a source might be too raw(or unsupervised),so the number of information extrapolated by that data will be limited,using Machine Learning. To enhance results,data must be manipulated and (re) assembled in a more tidy(cleaned) manner. So that the machine can perform the correct calculations and yield the results required.
-  A broad knowledge of statistics is required for any Data Analysis project
+  One of the cornerstones of Data Science is the subject of Data Structures and this is the main context of this project. 
+  What was once done manually is possible to automate the most tedious and time consuming tasks. For example, plotting      histograms, scatterplots and boxplots for all 4 different measurements of the different classes of species and compiling it all back together would require months to perform,using traditional statistical studies technique. 
+  There are however,tricks,skills and techiniques to know. For a Data Scientist,the data retrieved from a source might be too raw(or unsupervised),so the number of information extrapolated by that data will be limited. To enhance results,data must be manipulated and (re) assembled in a more tidy(cleaned) manner. So that the machine can perform the correct calculations and yield the results required.
+  A broad knowledge of statistics is required for any Data Analysis project. Although,this was not required for this dataset
   
   ### The Files and Algorithms
   
@@ -126,13 +134,14 @@ Plenty of information available online and I provided a list of resources used b
   
   #### Iris.py
   
-  This file opened and stored iris.csv as a dataframe(or short df),using pandas library. From there I used built-in commands(df.describe()) to calculate a summary of basic statistics calculations(min.,max.,std. dev.,frequency,quartiles).
+  This file opened and stored iris.csv as a dataframe(or short df), using pandas library. From there I used built-in commands(df.describe()) to calculate a summary of basic statistics calculations(min., max., std. dev., frequency, quartiles).
   
-  As this was my first time using pandas for Python,I tried different commands(add columns for header,print the first 5 rows of dataframes,append by index row numbers values to different subsets of the dataframe,list information about the Dataframe.
+  As this was my first time using pandas for Python,I tried different commands(add columns for header, print the first 5 rows of dataframes, append by index row numbers values to different subsets of the dataframe, list information about the Dataframe.
+  After all the calculations are performed and presented, a matrix of histograms is plotted and shown with the default lightblue for all 4 variables
   
   #### Plot.py
   
-  This file uses Matplotlib and Seaborn to plot pairplot graphs in a matrix. Histograms and scatter plots for the different species of iris separated by different colours. We can see that Iris versicolor and virginica are very closely related,because their distributed very closely(almost overlapping). Here the use of contrasting colours is most beneficial for anyone analysing data, from so closely related variables. As this provides a clearer distinction of the two.
+  This file uses Matplotlib and Seaborn to plot pairplot graphs in a matrix. Histograms and scatter plots for the different species of iris separated by different colours. We can see that Iris versicolor and virginica are very closely related, because they are distributed very closely(almost overlapping). Here the use of contrasting colours is most beneficial for anyone analysing data, from so closely related variables. As this provides a clearer distinction of the two.
   Each row in the matrix represents each of the 4 variables ('Sepal Width', 'Sepal Lenght', 'Petal Width', 'Petal Lenght')
   The histograms provide a visualisation of frequency and distribution of data
   
@@ -140,7 +149,12 @@ Plenty of information available online and I provided a list of resources used b
   
   #### Boxplot.py
   
-  This file shows the boxplots for the different species of irises.
+  This file shows the boxplots. Each boxplot represents each numerical columns.
   Boxplots provide a clear visualisation of median(Q2),minimum(lower observation on whisker and maximum(highest observation) values,lower quartile(Q1),and upper quartile(Q3)  from iris.py of all 4 columns('Sepal Width', 'Sepal Lenght', 'Petal Width' and 'Petal Lenght')
+  
+  
+  #### LinReg.py
+  
+  This file shows 2 Linear Regression graphs(one based on 'Sepal' variables and the other based on 'Petal' ), to help identify better co relationship between the 3 species. By viewing the both graphs, I could conclude that 'iris-virginica' and 'iris-versicolor' are closely related by their measured results. 'Iris setosa' seems to be completely unrelated,as its results appear distant and distinguished from the other 2 species. 
 
 
