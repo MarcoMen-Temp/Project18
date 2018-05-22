@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('iris.csv', header = None) # StackOverflow: 'How to add header row to pandas DataFrame and PythonHow.com-'Loading CSV data in Python with pandas'
 
-df.columns = ['Sepal Lenght','Sepal Width','Petal Lenght','Petal Width','Species']
+df.columns = ['Sepal Length','Sepal Width','Petal Length','Petal Width','Species']
 
 print(df.info())
 
@@ -17,9 +17,9 @@ print(df.info())
 print (df.columns) #Get column names on an Index Line(in Terminal)
 print(df.describe())
 #Assigning variables to header row(Index),to facilitate statistical calculations of the 4 numerical rows
-SepLength = df ['Sepal Lenght' ]
+SepLength = df ['Sepal Length' ]
 SepWidth = df ['Sepal Width']
-PetLength = df ['Petal Lenght']
+PetLength = df ['Petal Length']
 PetWidth = df ['Petal Width']
 Species = df ['Species']
 print(df.groupby('Species').size())
