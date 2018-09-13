@@ -161,6 +161,26 @@ Plenty of information available online and I provided a list of resources used b
   
   ### Code/Output/Analysis
   
+  ```python
   
+   import pandas as pd
+	import seaborn as sns
+	import matplotlib.pyplot as plt
+	
+
+	df = pd.read_csv('iris.csv', header = None) # StackOverflow: 'How to add header row to pandas DataFrame and PythonHow.com-'Loading CSV data in Python with pandas'
+	
+
+	df.columns = ['Sepal Length','Sepal Width','Petal Length','Petal Width','Species']
+	
+
+	print(df.info())
+	
+
+	 # Prints the first 5 rows; For the last 5 rows: print(df.tail())
+	
+
+
+```  
 
 
