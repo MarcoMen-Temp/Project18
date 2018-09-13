@@ -156,5 +156,11 @@ Plenty of information available online and I provided a list of resources used b
   #### LinReg.py
   
   This file shows 2 Linear Regression graphs(one based on 'Sepal' variables and the other based on 'Petal' ), to help identify better co relationship between the 3 species. By viewing the both graphs, I could conclude that 'iris-virginica' and 'iris-versicolor' are closely related by their measured results. 'Iris setosa' seems to be completely unrelated,as its results appear distant and distinguished from the other 2 species. 
+  
+  ---
+  
+  ### Code/Output/Analysis
+  
+  
 
 
